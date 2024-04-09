@@ -105,9 +105,9 @@ function Trends (){
                     <h3>Who to follow</h3>
                 </div>
                 {
-                    fakeFollowData.map((fol) =>
+                    fakeFollowData.map((fol, i) =>
 
-                        <div className='follow'>
+                        <div className='follow' key={i}>
                             <div className="tweet-avatar">
                                 <img src={fol.avatar} alt="" />
                             </div>

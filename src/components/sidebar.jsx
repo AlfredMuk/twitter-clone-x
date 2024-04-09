@@ -8,15 +8,19 @@ import Lists from "../assets/Lists.svg";
 import Group1 from "../assets/Group1.svg";
 import More from "../assets/More.svg";
 import "../App.css";
+ 
+import {Link} from "react-router-dom"
 
 function Sidebar() {
     return(
 
         <div className="sidebar">
-            <i class="icon-class"><img src={twitter} alt=" " /></i>
+            <i className="icon-class"><img src={twitter} alt=" " /></i>
             <div className="sidebarIcons">
-                <i class="icon-class"><img src={Homme} alt=" " /></i>
-                <p>Home</p>
+                <Link to="/">
+                    <i className="icon-class"><img src={Homme} alt=" " /></i>
+                    <p>Home</p>
+                </Link>
             </div>
             <div className="sidebarIcons">
                 <i class="icon-class"><img src={Vector} alt=" " /> </i>
@@ -39,11 +43,13 @@ function Sidebar() {
                 <p>Lists</p>
             </div>
             <div className="sidebarIcons">
-                <i class="icon-class"><img src={Group1} alt=" " /></i>
-                <p>Profile</p>
+                <Link to ="/Bradley">
+                    <i class="icon-class"><img src={Group1} alt=" " /></i>
+                    <p>Profile</p>
+                </Link>
             </div>
             <div className="sidebarIcons">
-                <i class="icon-class"><img src={More} alt="" /></i>
+                <i className="icon-class"><img src={More} alt="" /></i>
                 <p>More</p>
             </div>
 
