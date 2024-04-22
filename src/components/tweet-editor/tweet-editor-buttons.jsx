@@ -1,13 +1,15 @@
-import Button from '../global/button';
-import TweetEditorActions from './tweet-editor-actions'
+import Button from "../global/button";
+import TweetEditorActions from "./tweet-editor-actions";
 
-function TweetEditorButtons(){
+function TweetEditorButtons() {
   return (
-    <div className='tweet-editor-buttons'>
+    <div className="tweet-editor-buttons flex items-center justify-between bg-black">
       <TweetEditorActions />
-      <Button value='Tweet'/>
+      <div className=" flex capitalize p-4 rounded-full bg-blue-500">
+        <Button value="Tweet" />
+      </div>
     </div>
   );
 }
 
-export default TweetEditorButtons
+export default TweetEditorButtons;

@@ -1,6 +1,6 @@
 function TweetText({text}){
   return (
-    <p className='tweet-text'>{text}</p>
+    <p className='tweet-text p-2'>{text}</p>
   );
 }
 

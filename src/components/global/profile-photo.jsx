@@ -1,9 +1,6 @@
 function ProfilePhoto({src}){
     return (
-      <div className='avatar'>
-         <img src={src} ></img>
-      </div>
-     
+      <img className='avatar rounded-full' src={src} />
     )
 }
 

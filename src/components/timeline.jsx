@@ -8,7 +8,7 @@ const {user, media} = data
 
 function Timeline() { 
   return (
-    <div className='timeline'>
+    <div className="flex-grow bg-black text-white">
       <Header />
       <TweetEditor profile={user.profile} />
       <Tweets data={media} />

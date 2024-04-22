@@ -4,7 +4,7 @@ import Icon  from "../global/icon"
 function TweetTitleAuthor({author}){
 
     return (
-        <p className='tweet-title-author'><span>{author}</span><Icon src={verified} /></p>
+        <p className='tweet-title-author flex'><span>{author}</span><Icon src={verified} /></p>
     )
 }
 

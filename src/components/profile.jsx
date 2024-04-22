@@ -5,7 +5,7 @@ function Profile () {
     return(
         <div>
             
-               <h1> Tweet de Bradly</h1>
+               <h1> Tweet de @Bradly</h1>
         </div>
     )
 }

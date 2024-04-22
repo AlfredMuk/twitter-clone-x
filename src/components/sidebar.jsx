@@ -10,97 +10,119 @@ import Group1 from "../assets/Group1.svg";
 import More from "../assets/More.svg";
 import Name from "../assets/Name.svg";
 import "../App.css";
- 
-import {Link} from "react-router-dom"
+
+import { Link } from "react-router-dom"
 
 function Sidebar() {
-    return(
+    return (
 
-        <div className="sidebar">
-            <i className="icon-class"><img src={twitter} alt=" " /></i>
+        <div className="min-w-[20rem] gap-3 h-64 bg-black flex flex-col text-white p-5">
 
-            <div className="sidebarIcons">
-                <Link to="/">
-                    <i className="icon-class">
-                        <img src={Homme} alt=" " /></i>
-                    <p>Home</p>
-                </Link>
+            <div className="h-[2.5rem] border-white "><img src={twitter} alt=" " /></div>
+
+            <div className="flex-grow border-white items-center">
+                <div className="sidebarIcons p-5">
+                    <Link to="/">
+                        <div className="icon-class">
+                            <div class= "flex"> <img src={Homme } alt=" "/>
+                                <p class="ml-2">Home</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="sidebarIcons">
+                    <Link to={"/Explore"}>
+                        <div class="icon-class">
+                           <div class="flex"> <img src={Vector} alt=" " />
+                                <p class="ml-2 py-5">Explore</p>
+                           </div>
+                         </div>
+                    </Link>
+                </div>
+
+                <div className="sidebarIcons">
+                    <Link to={"/notifications"}>
+                        <div class="icon-class">
+                            <div class="flex"><img src={Notifications} alt=" " />
+                                <p class="ml-2">Notifications</p>
+                            </div>   
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="sidebarIcons">
+                    <Link to={"/lists"}>
+                        <div class="icon-class">
+                            <div class="flex"><img src={Lists} alt=" " />
+                                <p class="ml-2 py-5">Lists</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="sidebarIcons">
+                    <Link to={"/Messages"}>
+                        <div class="icon-class">
+                          <div class="flex">  <img src={Vector1} alt=" " />
+                            <p class="ml-2">Messages</p>
+                          </div>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="sidearIcons">
+                    <Link to={"/bookmarks"}>
+                        <div class="icon-class">
+                            <div class="flex"><img src={Vector2} alt=" " />
+                                <p class="ml-2 py-5">Bookmarks</p>
+                            </div>
+                        </div>
+                        
+                    </Link>
+                </div>
+
+                <div className='sidebarIcons'>
+                    <Link to={"/Lists"}>
+                        <div class="icon-class">
+                            <div class="flex"><img src={Lists} alt=" " />
+                                <p class="ml-2">Lists</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="sidebarIcons">
+                    <Link to={"/profile/"}>
+                        <div class="icon-class">
+                            <div class="flex"> <img src={Group1} alt=" " />
+                                <p class="ml-2 py-6">Profile</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="sidebarIcons">
+                    <Link to={"/More"}>
+                        <div class="icon-class">
+                            <div class="flex"><img src={More} alt=" " />
+                            <p class="ml-2 py-4">More</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
             </div>
 
-            <div className="sidebarIcons">
-                <Link to ={"/Explore"}>
-                <i class="icon-class">
-                    <img src={Vector} alt=" " /> </i>
-                <p>Explore</p>
-                </Link>
+            <div className='h-[2.5rem] flex justify-center items-center bg-cyan-500 rounded-3xl'>
+                <button className='bg-blue h-28'>button</button>
             </div>
 
-            <div className="sidebarIcons">
-                <Link to={"/notifications"}>
-                    <i class="icon-class">
-                        <img src={Notifications} alt=" " /></i>
-                    <p>Notifications</p>
-                </Link>
-            </div>
-
-            <div className="sidebarIcons">
-                <Link to={"/lists"}>
-                    <i class="icon-class">
-                        <img src={Lists} alt=" " /></i>
-                    <p>Lists</p>
-                </Link>
-            </div>
-
-            <div className="sidebarIcons">
-                <Link to={"/Messages"}>
-                    <i class="icon-class">
-                        <img src={Vector1} alt=" " /></i>
-                    <p>Messages</p>
-                </Link>
-            </div>
-
-            <div className="sidearIcons">
-                <Link to={"/bookmarks"}>
-                    <i class="icon-class">
-                        <img src={Vector2} alt=" " /></i>
-                    <p>Bookmarks</p>
-                </Link>
-            </div>
-
-            <div className='sidebarIcons'>
-                <Link to ={"/Lists"}>
-                    <i class="icon-class">
-                        <img src={Lists} alt=" " /></i>
-                    <p>Lists</p>
-                </Link>
-            </div>
-
-            <div className="sidebarIcons">
-                <Link to =  {"/profile/" }>
-                    <i class="icon-class">
-                        <img src={Group1} alt=" " /></i>
-                    <p>Profile</p>
-                </Link>
-            </div>
-
-            <div className="sidebarIcons">
-                <Link to = {"/More"}>
-                    <i class="icon-class">
-                        <img src={More} alt=" " /></i>
-                    <p>More</p>
-                </Link>
-            </div>
-
-           
-
-            <button className='button1'>button</button>
-
-         <div className="sidebar">
+            {/* <div className="sidebar">
             <i className="icon-class">
                 <img src={Name} alt=" " />
             </i>
                 <p>Name</p>
-         </div>       
+         </div>        */}
         </div>
 
     );

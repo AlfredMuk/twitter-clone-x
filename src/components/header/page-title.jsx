@@ -1,6 +1,8 @@
 function PageTitle({title}){
     return (
-        <h1 className='page-title'>{title}</h1>
+        <div className="font-bold">
+         <h1 className='page-title'>{title}</h1>
+        </div>
     )
 }
 

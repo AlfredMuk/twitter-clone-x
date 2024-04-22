@@ -4,6 +4,7 @@ import Twitter from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Timeline from './components/timeline.jsx'
 import Profile from './components/profile.jsx'
+import { Tweetsprovider } from './contexts/TweetsContext.jsx'
 //import './index.css'
 
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([{
       element: <div>Lists</div>
     }	,
     {
+      path: "/profile/:userId",
+      element: <Profile />
+    }	,
+    {
       path: "/profile",
       element: <Profile />
     }
@@ -52,6 +57,8 @@ const router = createBrowserRouter([{
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    {/* <Tweetsprovider> */}
     <RouterProvider router={router} />
+    {/* </Tweetsprovider> */}
   </React.StrictMode>,
 )
