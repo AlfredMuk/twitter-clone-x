@@ -10,7 +10,7 @@ function Tweets({data}) {
     
     let mediadata = Object.keys(data)
     return (
-        <div className='tweets flex-start justify-start justify-space-between '>
+        <div className='tweets border-0-0 flex-start justify-start justify-space-between '>
             {mediadata.map((id, key) => { 
                 const tweet = data[id]
                 return (

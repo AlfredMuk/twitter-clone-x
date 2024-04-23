@@ -4,7 +4,7 @@ function TweetImage({src}){
       <div className=" ">
         <div className="justify-center">
           <div className=" p-5">
-          <img className="rounded-3xl" src={src} ></img>
+          <img className="rounded-3xl w-120" src={src} ></img>
           </div>
         </div>
       </div>
